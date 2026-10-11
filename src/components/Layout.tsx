@@ -36,7 +36,7 @@ export function Layout() {
             onChangeCompact={setCompact}
             logo={{
                 text: "ЕКЦ МОМЦ",
-                iconSrc: "/logo_momc.png",
+                iconSrc: `${import.meta.env.BASE_URL}logo_momc.png`,
                 iconSize: 28,
                 onClick: () => navigate("/waiting"),
             }}
