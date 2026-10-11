@@ -1,0 +1,303 @@
+import type { SelectOption } from "@gravity-ui/uikit";
+
+import type { UserRole } from "./currentUser";
+
+export interface WaitingRow {
+    id: string;
+    status: string;
+    priority: string;
+    incidentDate: string;
+    patient: string;
+    category: string;
+    reason: string;
+    lpu: string;
+    specialist: string;
+    dueDate: string;
+    decision: string;
+    decisionDate: string;
+    lo?: string;
+    birthDate?: string;
+    createdBy: string;
+    createdByRole: UserRole;
+    updatedBy?: string;
+}
+
+export const WAITING_ROWS: WaitingRow[] = [
+    {
+        id: "1",
+        status: "В ожидании",
+        priority: "Высокий",
+        incidentDate: "02.10.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Экстренная",
+        reason: "Боль в груди",
+        lpu: "Поликлиника №1",
+        specialist: "Кардиолог",
+        dueDate: "05.10.2026",
+        decision: "Записать",
+        decisionDate: "02.10.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "2",
+        status: "Подтверждён",
+        priority: "Средний",
+        incidentDate: "01.10.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Плановая",
+        reason: "Консультация",
+        lpu: "Поликлиника №2",
+        specialist: "Терапевт",
+        dueDate: "08.10.2026",
+        decision: "Записать",
+        decisionDate: "01.10.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "3",
+        status: "В ожидании",
+        priority: "Низкий",
+        incidentDate: "30.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Плановая",
+        reason: "Плановый осмотр",
+        lpu: "Поликлиника №3",
+        specialist: "Невролог",
+        dueDate: "12.10.2026",
+        decision: "Записать",
+        decisionDate: "30.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "4",
+        status: "Отменён",
+        priority: "Средний",
+        incidentDate: "29.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Экстренная",
+        reason: "Повторный вызов",
+        lpu: "Поликлиника №4",
+        specialist: "Хирург",
+        dueDate: "03.10.2026",
+        decision: "Отклонить",
+        decisionDate: "29.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "5",
+        status: "Подтверждён",
+        priority: "Высокий",
+        incidentDate: "28.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Экстренная",
+        reason: "Травма",
+        lpu: "Поликлиника №5",
+        specialist: "Травматолог",
+        dueDate: "28.09.2026",
+        decision: "Записать",
+        decisionDate: "28.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "6",
+        status: "В ожидании",
+        priority: "Средний",
+        incidentDate: "27.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Плановая",
+        reason: "Консультация",
+        lpu: "Поликлиника №3",
+        specialist: "Эндокринолог",
+        dueDate: "10.10.2026",
+        decision: "Записать",
+        decisionDate: "27.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "7",
+        status: "Подтверждён",
+        priority: "Высокий",
+        incidentDate: "26.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Экстренная",
+        reason: "Одышка",
+        lpu: "Поликлиника №2",
+        specialist: "Пульмонолог",
+        dueDate: "29.09.2026",
+        decision: "Записать",
+        decisionDate: "26.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "8",
+        status: "В ожидании",
+        priority: "Низкий",
+        incidentDate: "25.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Плановая",
+        reason: "Диспансеризация",
+        lpu: "Поликлиника №7",
+        specialist: "Терапевт",
+        dueDate: "15.10.2026",
+        decision: "Записать",
+        decisionDate: "25.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "9",
+        status: "Отменён",
+        priority: "Высокий",
+        incidentDate: "24.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Экстренная",
+        reason: "Повторный вызов",
+        lpu: "Поликлиника №4",
+        specialist: "Невролог",
+        dueDate: "26.09.2026",
+        decision: "Отклонить",
+        decisionDate: "24.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "10",
+        status: "Подтверждён",
+        priority: "Средний",
+        incidentDate: "23.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Плановая",
+        reason: "Осмотр",
+        lpu: "Поликлиника №1",
+        specialist: "Окулист",
+        dueDate: "07.10.2026",
+        decision: "Записать",
+        decisionDate: "23.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "11",
+        status: "В ожидании",
+        priority: "Средний",
+        incidentDate: "22.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Экстренная",
+        reason: "Боль в груди",
+        lpu: "Поликлиника №2",
+        specialist: "Кардиолог",
+        dueDate: "24.09.2026",
+        decision: "Записать",
+        decisionDate: "22.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "12",
+        status: "Подтверждён",
+        priority: "Низкий",
+        incidentDate: "21.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Плановая",
+        reason: "Плановый осмотр",
+        lpu: "Поликлиника №3",
+        specialist: "Терапевт",
+        dueDate: "30.09.2026",
+        decision: "Записать",
+        decisionDate: "21.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "13",
+        status: "В ожидании",
+        priority: "Высокий",
+        incidentDate: "20.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Экстренная",
+        reason: "Одышка",
+        lpu: "Поликлиника №9",
+        specialist: "Пульмонолог",
+        dueDate: "22.09.2026",
+        decision: "Записать",
+        decisionDate: "20.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "14",
+        status: "Отменён",
+        priority: "Низкий",
+        incidentDate: "19.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Плановая",
+        reason: "Консультация",
+        lpu: "Поликлиника №7",
+        specialist: "Эндокринолог",
+        dueDate: "01.10.2026",
+        decision: "Отклонить",
+        decisionDate: "19.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+    {
+        id: "15",
+        status: "Подтверждён",
+        priority: "Средний",
+        incidentDate: "18.09.2026",
+        patient: "Петров Пётр Петрович",
+        category: "Экстренная",
+        reason: "Травма",
+        lpu: "Поликлиника №4",
+        specialist: "Травматолог",
+        dueDate: "18.09.2026",
+        decision: "Записать",
+        decisionDate: "18.09.2026",
+        createdBy: "Николай Нидворай",
+        createdByRole: "operator",
+    },
+];
+
+export const STATUS_OPTIONS: SelectOption[] = [
+    { value: "В ожидании", content: "В ожидании" },
+    { value: "Подтверждён", content: "Подтверждён" },
+    { value: "Отменён", content: "Отменён" },
+];
+
+export const PRIORITY_OPTIONS: SelectOption[] = [
+    { value: "Высокий", content: "Высокий" },
+    { value: "Средний", content: "Средний" },
+    { value: "Низкий", content: "Низкий" },
+];
+
+export const CATEGORY_OPTIONS: SelectOption[] = [
+    { value: "Плановая", content: "Плановая" },
+    { value: "Экстренная", content: "Экстренная" },
+];
+
+export const DECISION_OPTIONS: SelectOption[] = [
+    { value: "Записать", content: "Записать" },
+    { value: "Отклонить", content: "Отклонить" },
+];
+
+export const SPECIALITY_OPTIONS: SelectOption[] = [
+    { value: "Терапевт", content: "Терапевт" },
+    { value: "Кардиолог", content: "Кардиолог" },
+    { value: "Невролог", content: "Невролог" },
+    { value: "Хирург", content: "Хирург" },
+    { value: "Травматолог", content: "Травматолог" },
+    { value: "Эндокринолог", content: "Эндокринолог" },
+    { value: "Пульмонолог", content: "Пульмонолог" },
+    { value: "Окулист", content: "Окулист" },
+];
+
+export const LPU_OPTIONS: SelectOption[] = Array.from(
+    new Set(WAITING_ROWS.map((row) => row.lpu)),
+).map((lpu) => ({ value: lpu, content: lpu }));

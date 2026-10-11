@@ -1,0 +1,80 @@
+/* Custom Gravity UI theme inspired by Yandex Cloud.
+   Overrides are scoped to the theme class that ThemeProvider puts on <body>.
+   Light: background #e7ebf4. Dark: background #1f2328, sidebar #252c34. Accent: #2a9fff. */
+
+body.g-root_theme_light {
+    /* surfaces */
+    --g-color-base-background: #e7ebf4;
+    --g-color-base-float: #ffffff;
+    --g-color-base-float-hover: #f2f5fb;
+    --g-color-base-float-accent: #ffffff;
+    --g-color-base-float-accent-hover: #f2f5fb;
+    --g-color-base-modal: #ffffff;
+    --g-color-base-generic: rgba(0, 0, 0, 0.05);
+    --g-color-base-generic-hover: rgba(0, 0, 0, 0.09);
+    --g-color-base-simple-hover: rgba(0, 0, 0, 0.05);
+    --g-color-base-simple-hover-solid: rgba(0, 0, 0, 0.05);
+
+    --g-color-line-generic: #d3dae6;
+    --g-color-line-generic-hover: #b9c3d4;
+    --g-color-line-generic-active: #9aa7bd;
+
+    /* brand */
+    --g-color-base-brand: #2a9fff;
+    --g-color-base-brand-hover: #1a8ef2;
+    --g-color-base-selection: #cfe0f4;
+    --g-color-base-selection-hover: #c2ddff;
+
+    --g-color-text-brand: #0f74d6;
+    --g-color-text-brand-heavy: #0a5aa6;
+    --g-color-text-brand-contrast: #ffffff;
+
+    --g-color-text-link: #0f74d6;
+    --g-color-text-link-hover: #0a5aa6;
+    --g-color-text-link-visited: #6a11cb;
+    --g-color-text-link-visited-hover: #47088f;
+
+    /* aside header decoration gradient */
+    --gn-aside-header-decoration-expanded-background-color: #cfe0f4;
+    --gn-aside-header-decoration-collapsed-background-color: #cfe0f4;
+}
+
+body.g-root_theme_dark {
+    /* surfaces */
+    --g-color-base-background: #1f2328;
+    --g-color-base-float: #262a30;
+    --g-color-base-float-hover: #2e333a;
+    --g-color-base-float-accent: #262a30;
+    --g-color-base-float-accent-hover: #2e333a;
+    --g-color-base-modal: #262a30;
+    --g-color-base-generic: rgba(255, 255, 255, 0.06);
+    --g-color-base-generic-hover: rgba(255, 255, 255, 0.1);
+    --g-color-base-simple-hover: rgba(255, 255, 255, 0.06);
+    --g-color-base-simple-hover-solid: rgba(255, 255, 255, 0.06);
+
+    /* aside header surface */
+    --gn-aside-header-background-color: #252c34;
+
+    --g-color-line-generic: rgba(255, 255, 255, 0.12);
+    --g-color-line-generic-hover: rgba(255, 255, 255, 0.18);
+    --g-color-line-generic-active: rgba(255, 255, 255, 0.26);
+
+    /* brand */
+    --g-color-base-brand: #2a9fff;
+    --g-color-base-brand-hover: #4bb0ff;
+    --g-color-base-selection: #1e3a5c;
+    --g-color-base-selection-hover: #284869;
+
+    --g-color-text-brand: #5fb2ff;
+    --g-color-text-brand-heavy: #8ac6ff;
+    --g-color-text-brand-contrast: #ffffff;
+
+    --g-color-text-link: #5fb2ff;
+    --g-color-text-link-hover: #8ac6ff;
+    --g-color-text-link-visited: #bb9bff;
+    --g-color-text-link-visited-hover: #d2bcff;
+
+    /* aside header decoration gradient */
+    --gn-aside-header-decoration-expanded-background-color: #24303f;
+    --gn-aside-header-decoration-collapsed-background-color: #24303f;
+}
