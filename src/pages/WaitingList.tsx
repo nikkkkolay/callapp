@@ -6,9 +6,12 @@ import { WAITING_ROWS, type WaitingRow } from "../mocks/waitingList";
 import { CURRENT_USER } from "../mocks/currentUser";
 import { formatDate, sortRows } from "../utils/waitingList";
 import { mockSave } from "../utils/mockRequest";
-import { WaitingListForm, type CreateFormValues } from "../components/waiting-list/WaitingListForm";
+import {
+    WaitingListForm,
+    type CreateFormValues,
+} from "../components/waiting-list/WaitingListCreateForm";
 import { WaitingListTable } from "../components/waiting-list/WaitingListTable";
-import { WaitingRowDialog } from "../components/waiting-list/WaitingRowDialog";
+import { WaitingRowDialog } from "../components/waiting-list/WaitingRowEditDialog";
 
 const HIGHLIGHT_TIMEOUT = 2600;
 

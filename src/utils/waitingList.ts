@@ -25,9 +25,11 @@ function dateValue(value: string): number {
 }
 
 export function statusTheme(status: string): LabelProps["theme"] {
-    if (status === "Подтверждён") return "success";
-    if (status === "Отменён") return "danger";
-    if (status === "В ожидании") return "info";
+    if (status === "Новая") return "info";
+    if (status === "В работе") return "normal";
+    if (status === "Записан на прием") return "success";
+    if (status === "Закрыта") return "utility";
+    if (status === "Отменена") return "danger";
     return "normal";
 }
 

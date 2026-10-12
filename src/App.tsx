@@ -4,12 +4,13 @@ import { Layout } from "./components/Layout";
 import { WaitingList } from "./pages/WaitingList";
 import { ControlList } from "./pages/ControlList";
 import { Info } from "./pages/Info";
+import { Calls } from "./pages/Calls";
 
 export default function App() {
     return (
         <Routes>
             <Route element={<Layout />}>
-                <Route index element={<WaitingList />} />
+                <Route index element={<Calls />} />
                 <Route path="waiting" element={<WaitingList />} />
                 <Route path="control" element={<ControlList />} />
                 <Route path="info" element={<Info />} />

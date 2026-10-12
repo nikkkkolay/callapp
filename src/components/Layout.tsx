@@ -1,14 +1,15 @@
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { AsideHeader, type AsideHeaderItem } from "@gravity-ui/navigation";
 import { Button, Text, User } from "@gravity-ui/uikit";
-import { CircleInfo, Clock, ListUl } from "@gravity-ui/icons";
+import { CircleInfo, Clock, ListUl, Handset } from "@gravity-ui/icons";
 
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { CURRENT_USER, getInitials, getRoleLabel } from "../mocks/currentUser";
 import { ThemeToggle } from "./ThemeToggle";
 
 const MENU: { id: string; title: string; path: string; icon: typeof Clock }[] = [
-    { id: "waiting", title: "Лист ожидания", path: "/", icon: Clock },
+    { id: "calls", title: "Звонки", path: "/", icon: Handset },
+    { id: "waiting", title: "Лист ожидания", path: "/waiting", icon: Clock },
     { id: "control", title: "Лист контроля", path: "/control", icon: ListUl },
     { id: "info", title: "Информация", path: "/info", icon: CircleInfo },
 ];
@@ -34,7 +35,7 @@ export function Layout() {
             compact={compact}
             onChangeCompact={setCompact}
             logo={{
-                text: "ЕКЦ МОМЦ",
+                text: "ЕКЦ МЗ МО",
                 iconSrc: `${import.meta.env.BASE_URL}logo_momc.png`,
                 iconSize: 28,
                 onClick: () => navigate("/"),

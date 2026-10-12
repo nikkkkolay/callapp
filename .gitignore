@@ -12,9 +12,6 @@ dist
 dist-ssr
 *.local
 
-# Local secrets — must never be committed
-key.md
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
